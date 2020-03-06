@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.scrolled {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.mtz-nav-wrapper {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 100;
+}
+
+.mtz-nav-wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: space-between;
+  margin: 0 auto;
+  margin-bottom: 1px solid #ddd;
+  padding: 20px 0 20px;
+}
+
+.mtz-nav-wrapper nav .mtz-nav-logo img {
+  height: 50px;
+}
+
+.mtz-nav-wrapper nav .mtz-nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mtz-nav-wrapper nav .mtz-nav-links a {
+  padding: 0 20px 0;
+  text-decoration: none;
+  color: #293a49;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+}
+
+.mtz-nav-wrapper nav .mtz-nav-links a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  font-weight: bold;
+  color: #040b49;
+}
+
+.mtz-nav-wrapper nav .mtz-get-a-quote {
+  height: 70px !important;
+  background: -webkit-gradient(linear, left top, right bottom, from(#1622c4), to(#040b49));
+  background: linear-gradient(to bottom right, #1622c4, #040b49);
+  padding: 15px 25px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+  -webkit-box-shadow: 0 0 30px rgba(233, 233, 233, 0.35);
+          box-shadow: 0 0 30px rgba(233, 233, 233, 0.35);
+}
+
+.mtz-nav-wrapper nav .mtz-get-a-quote:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#c43916), to(#c59d1a));
+  background: linear-gradient(to bottom right, #c43916, #c59d1a);
+  background: #182e58;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mtz-nav-wrapper nav .mtz-get-a-quote:active {
+  background: -webkit-gradient(linear, left top, right bottom, from(#c43916));
+  background: linear-gradient(to bottom right, #c43916);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mtz-landing-wrapper {
+  height: 700px;
+  width: 100%;
+}
+
+.mtz-landing-wrapper .mtz-landing {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.mtz-landing-wrapper .mtz-landing .mtz-landing-text {
+  font-size: 40px;
+  line-height: 45px;
+  color: #555555;
+  font-family: 'Segoe UI','Open Sans', 'Helvetica Neue';
+  max-width: 550px;
+  padding-top: 210px;
+  padding-bottom: 20px;
+}
+
+.mtz-landing-wrapper .mtz-landing .mtz-landing-text span {
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.mtz-landing-wrapper .mtz-landing p {
+  max-width: 450px;
+  font-size: 18px;
+}
+
+.mtz-landing-wrapper .mtz-landing .mtz-landing-cta-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  display: inline-block;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+}
+
+.mtz-landing-wrapper .mtz-landing .mtz-landing-cta-button a .mtz-landing-more {
+  position: absolute;
+  background: #0a0a0e;
+  padding: 10px 40px;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all .1s ease-out;
+  transition: all .1s ease-out;
+}
+
+.mtz-landing-wrapper .mtz-landing .mtz-landing-cta-button a .mtz-landing-more:hover {
+  -webkit-transform: translateX(6px);
+          transform: translateX(6px);
+  margin-top: 6px;
+}
+
+.mtz-landing-wrapper .mtz-landing .mtz-landing-cta-button .mtz-landing-more-shadow {
+  float: left;
+  background-color: #8f8f8f;
+  padding: 10px 40px;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.mtz-landing-wrapper .mtz-landing .blank img {
+  margin-top: -500px;
+}
+
+.mtz-services-wrapper {
+  background-color: #eaecee;
+}
+
+.mtz-services-wrapper .mtz-services-header {
+  background-image: url("./assets/images/pattern-3.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.mtz-services-wrapper .mtz-services-header h3 {
+  margin-bottom: 5px;
+  font-size: 25px;
+  line-height: 28px;
+}
+
+.mtz-services-wrapper .mtz-services-header h3 span {
+  font-weight: bold;
+  color: #040b49;
+}
+
+.mtz-services-wrapper .mtz-services-header p {
+  font-size: 18px;
+  color: #555555;
+}
+
+.mtz-services-wrapper .mtz-services-header div .mtz-services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mtz-services-wrapper .mtz-services-header div .mtz-services-list a {
+  text-decoration: none;
+  width: 250px;
+  background-color: #fff;
+  margin: 20px;
+  height: 200px;
+  text-align: center;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  padding: 40px;
+  border-radius: 20px;
+  color: #2e2e2e;
+  font-size: 17px;
+  line-height: 16px;
+}
+
+.mtz-services-wrapper .mtz-services-header div .mtz-services-list a div img {
+  height: 60px;
+  width: 60px;
+  padding-bottom: 10px;
+}
+
+.mtz-services-wrapper .mtz-services-header div .mtz-services-list a:hover {
+  background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
+  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  border-radius: 25px;
+  color: #fff;
+  padding-top: 50px;
+}
+
+.mtz-about-wrapper {
+  background: -webkit-gradient(linear, left top, right top, from(#0000004d), color-stop(#000000e6), to(url(./images/bg-goal.jpg)));
+  background: linear-gradient(to right, #0000004d, #000000e6, url(./images/bg-goal.jpg));
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.mtz-about-wrapper .class {
+  background-color: #000;
+}
+
+.mtz-get-quote-wrapper form input {
+  padding: 10px;
+}
+
+.mtz-get-quote-wrapper form input:focus {
+  border: 1px solid #182e58;
+}
+
+.mtz-get-quote-wrapper form textarea {
+  resize: none;
+  height: 150px;
+  padding: 10px;
+  -webkit-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.mtz-get-quote-wrapper form textarea:focus {
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.mtz-get-quote-wrapper form button {
+  background: -webkit-gradient(linear, left top, right bottom, from(#1622c4), to(#040b49));
+  background: linear-gradient(to bottom right, #1622c4, #040b49);
+  padding: 12px 30px;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+  -webkit-box-shadow: 0 0 30px rgba(233, 233, 233, 0.35);
+          box-shadow: 0 0 30px rgba(233, 233, 233, 0.35);
+}
+
+.mtz-get-quote-wrapper form button:hover {
+  background: -webkit-gradient(linear, left top, right bottom, from(#c43916), to(#c59d1a));
+  background: linear-gradient(to bottom right, #c43916, #c59d1a);
+  background: #182e58;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.mtz-footer-wrapper {
+  background-color: #000;
+  position: fixed;
+}
+/*# sourceMappingURL=styles.css.map */

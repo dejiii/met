@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    padding: 0;
+    // font-family: Montserrat, sans-serif
+}
+
+.scrolled{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: 500ms ease;
+}
+
+.mtz-nav-wrapper{
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    // box-shadow: 0 10px 20px rgba(179, 179, 179, 0.17);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 100;
+    
+    nav{        
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row;
+        align-items: center;
+        text-align: space-between;
+        margin: 0 auto;
+        margin-bottom: 1px solid #ddd;
+        padding: 20px 0 20px;
+
+        .mtz-nav-logo img{
+            height: 50px;
+        }
+
+        .mtz-nav-links{
+            display: flex;
+            align-items: center;
+            
+            a{
+                padding: 0 20px 0;
+                text-decoration: none;
+                color: #293a49;
+                transition: all .1s ease-in-out; 
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+            }
+
+            a:hover{
+                transform: scale(1.05);
+                font-weight: bold;
+                color: #040b49;
+            }
+        }
+
+        .mtz-get-a-quote{
+            height: 70px !important;
+            background: linear-gradient( to bottom right, rgb(22, 34, 196), rgb(4, 11, 73));
+            padding: 15px 25px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;     
+            transition: all .4s ease-out; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';     
+            box-shadow: 0 0 30px rgba(233, 233, 233, 0.35);  
+        }
+        
+        .mtz-get-a-quote:hover {
+            background: linear-gradient( to bottom right, rgb(196, 57, 22), rgb(197, 157, 26));
+            background: #182e58;
+            box-shadow: none;
+        }
+
+        .mtz-get-a-quote:active {
+            background: linear-gradient( to bottom right, rgb(196, 57, 22));
+            box-shadow: none;
+        }
+    }
+}
+
+// .bg{
+//     background-image: url('./images/Artboard-h.png');
+//     background-size: cover;
+//     margin-top: -200px;
+// }
+
+//Landing page section
+.mtz-landing-wrapper{
+    height: 700px;
+    width: 100%;
+
+   
+
+    // background-posiiton: 
+
+
+    .mtz-landing{   
+        margin: 0 auto; 
+        max-width: 1200px;
+
+        .mtz-landing-text{
+            font-size: 40px;
+            line-height: 45px;
+            color: #555555;
+            font-family: 'Segoe UI','Open Sans', 'Helvetica Neue';
+            max-width: 550px;
+            padding-top: 210px;
+            padding-bottom: 20px;
+
+            span{
+                color: #2e2e2e;
+                font-weight: bold;
+            }
+        }
+
+        p{
+            max-width: 450px;
+            font-size: 18px;
+        }
+
+        .mtz-landing-cta-button{
+            display: flex;
+            position: relative;
+            display: inline-block;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+
+            a{
+                .mtz-landing-more{
+                    position: absolute;
+                    background: #0a0a0e;
+                    padding: 10px 40px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-decoration: none;
+                    transition: all .1s ease-out; 
+                }
+
+                .mtz-landing-more:hover{
+                    transform: translateX(6px);
+                    margin-top: 6px;
+                }
+            }
+            
+            .mtz-landing-more-shadow{
+                float: left;
+                background-color: #8f8f8f;   
+                padding: 10px 40px;
+                margin-top: 10px;
+                font-size: 14px;
+                margin-left: 10px;
+            }
+        }
+
+        .blank img{
+            margin-top: -500px;
+            // background-image: url("./images/artboard.png");
+            // width: 500px;
+            // background-size: cover;
+            // width: 100%;
+        }
+    }
+}
+
+//Services section
+.mtz-services-wrapper{
+    background-color: #eaecee;
+
+    .mtz-services-header{
+        background-image: url("./assets/images/pattern-3.png");
+        background-size: cover;
+        width: 100%;
+        
+        h3{
+            // font-family: Poppins, sans-serif;
+            margin-bottom: 5px;
+            font-size: 25px;
+            line-height: 28px;
+
+
+            span{
+                font-weight: bold;
+                color: #040b49;
+            }
+        }
+
+        p{
+            font-size: 18px;
+            color: #555555;
+        }
+
+        div{
+            .mtz-services-list{
+                display: flex;
+                width: 80%;
+                margin: 0 auto;
+                justify-content: center;
+
+                a{
+                    text-decoration: none;
+                    width: 250px;
+                    background-color: #fff;
+                    margin: 20px;
+                    height: 200px;
+                    text-align: center;
+                    transition: all .4s ease-in-out;
+                    padding: 40px;
+                    border-radius: 20px;
+                    color: #2e2e2e;
+                    font-size: 17px;
+                    line-height: 16px;
+
+                    div{
+
+                        img{
+                            height: 60px;
+                            width: 60px;
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+
+                a:hover{
+                    background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
+                    // background-image: linear-gradient(135deg, #59669e88 0%, #274997 100%);
+                    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
+                    transform: scale(1.01);
+                    border-radius: 25px;
+                    color: #fff;
+                    padding-top: 50px;  
+                }
+            }
+        }
+    }
+
+    
+}
+
+//About Section
+.mtz-about-wrapper{
+    background: linear-gradient(to right, #0000004d, #000000e6, url(./images/bg-goal.jpg)); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    // height: 500px;
+
+    .class {
+        background-color: #000;
+    }
+}
+
+//Get a Quote Section
+
+.mtz-get-quote-wrapper{
+   
+    form{
+        input{
+            padding: 10px;
+            // transition: ;
+        }
+
+        input:focus{
+            border: 1px solid #182e58;
+        }
+
+        textarea{
+            resize: none;   
+            height: 150px;
+            padding: 10px;
+            transition: all .8s ease-out;
+        }
+
+        textarea:focus{
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); 
+        }
+
+        button{
+            // height: 70px !important;
+            background: linear-gradient( to bottom right, rgb(22, 34, 196), rgb(4, 11, 73));
+            padding: 12px 30px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;     
+            transition: all .4s ease-out; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';     
+            box-shadow: 0 0 30px rgba(233, 233, 233, 0.35); 
+        }
+
+        button:hover{
+            background: linear-gradient( to bottom right, rgb(196, 57, 22), rgb(197, 157, 26));
+            background: #182e58;
+            box-shadow: none;
+        }
+    }
+}
+
+//Footer Section
+.mtz-footer-wrapper{
+    // height: 250px;
+    background-color: #000;
+    position: fixed;
+}

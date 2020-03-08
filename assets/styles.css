@@ -99,9 +99,17 @@ body {
           box-shadow: none;
 }
 
+.mtz-nav-wrapper nav .mtz-smaller-screen-navigation {
+  display: none;
+}
+
 .mtz-landing-wrapper {
   height: 700px;
   width: 100%;
+  background-image: url("./images/Artboard.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .mtz-landing-wrapper .mtz-landing {
@@ -164,8 +172,33 @@ body {
   margin-left: 10px;
 }
 
-.mtz-landing-wrapper .mtz-landing .blank img {
-  margin-top: -500px;
+.mtz-about-wrapper {
+  background: -webkit-gradient(linear, left top, right top, from(#0000004d), color-stop(#000000e6), to(url(./images/bg-goal.jpg)));
+  background: linear-gradient(to right, #0000004d, #000000e6, url(./images/bg-goal.jpg));
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.mtz-about-wrapper .mtz-about-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mtz-about-wrapper .mtz-about-body .mtz-about-content,
+.mtz-about-wrapper .mtz-about-body .class {
+  width: 50%;
+}
+
+.mtz-about-wrapper .mtz-about-body .mtz-about-content {
+  padding: 0 10px;
+}
+
+.mtz-about-wrapper .mtz-about-body .class {
+  background-image: url(./images/photo-of-people-holding-each-other-s-hands-3184423.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .mtz-services-wrapper {
@@ -194,7 +227,7 @@ body {
   color: #555555;
 }
 
-.mtz-services-wrapper .mtz-services-header div .mtz-services-list {
+.mtz-services-wrapper .mtz-services-header .mtz-services-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +238,7 @@ body {
           justify-content: center;
 }
 
-.mtz-services-wrapper .mtz-services-header div .mtz-services-list a {
+.mtz-services-wrapper .mtz-services-header .mtz-services-list a {
   text-decoration: none;
   width: 250px;
   background-color: #fff;
@@ -221,13 +254,13 @@ body {
   line-height: 16px;
 }
 
-.mtz-services-wrapper .mtz-services-header div .mtz-services-list a div img {
+.mtz-services-wrapper .mtz-services-header .mtz-services-list a div img {
   height: 60px;
   width: 60px;
   padding-bottom: 10px;
 }
 
-.mtz-services-wrapper .mtz-services-header div .mtz-services-list a:hover {
+.mtz-services-wrapper .mtz-services-header .mtz-services-list a:hover {
   background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
@@ -238,44 +271,59 @@ body {
   padding-top: 50px;
 }
 
-.mtz-about-wrapper {
-  background: -webkit-gradient(linear, left top, right top, from(#0000004d), color-stop(#000000e6), to(url(./images/bg-goal.jpg)));
-  background: linear-gradient(to right, #0000004d, #000000e6, url(./images/bg-goal.jpg));
-  background-size: cover;
-  background-position: center;
-  width: 100%;
+.mtz-our-goal-wrapper {
+  background-color: #eaecee;
 }
 
-.mtz-about-wrapper .class {
-  background-color: #000;
+.mtz-our-goal-wrapper .mtz-our-goal-header {
+  background-color: #424272;
 }
 
-.mtz-get-quote-wrapper form input {
+.mtz-our-goal-wrapper .mtz-our-goal-header .mtz-our-goal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mtz-our-goal-wrapper .mtz-our-goal-header .mtz-our-goal div {
+  width: 50%;
+}
+
+.mtz-get-quote-wrapper form div:first-child {
+  padding-bottom: 10px;
+}
+
+.mtz-get-quote-wrapper form input, .mtz-get-quote-wrapper form textarea {
   padding: 10px;
-}
-
-.mtz-get-quote-wrapper form input:focus {
-  border: 1px solid #182e58;
+  background-color: #d8d8d880;
+  border: 1px solid #ddd;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
 .mtz-get-quote-wrapper form textarea {
   resize: none;
   height: 150px;
   padding: 10px;
-  -webkit-transition: all .8s ease-out;
-  transition: all .8s ease-out;
+  width: 50%;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }
 
+.mtz-get-quote-wrapper form input:focus,
 .mtz-get-quote-wrapper form textarea:focus {
-  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid #0256f1;
+  color: #253d69;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .mtz-get-quote-wrapper form button {
   background: -webkit-gradient(linear, left top, right bottom, from(#1622c4), to(#040b49));
   background: linear-gradient(to bottom right, #1622c4, #040b49);
-  padding: 12px 30px;
+  padding: 12px 50px;
   color: #fff;
+  border: 0;
   border-radius: 5px;
   text-decoration: none;
   -webkit-transition: all .4s ease-out;
@@ -294,7 +342,55 @@ body {
 }
 
 .mtz-footer-wrapper {
-  background-color: #000;
-  position: fixed;
+  background-color: #202020;
+  padding: 40px 0 10px;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-left-content,
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-center-content,
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-right-content {
+  width: 33.3%;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-left-content {
+  color: #fff;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-right-content,
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-center-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-right-content .mtz-footer-content-item,
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-center-content .mtz-footer-content-item {
+  width: 50%;
+  padding: 0 10px 0;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-right-content .mtz-footer-content-item h5,
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-center-content .mtz-footer-content-item h5 {
+  font-size: 15px;
+  color: #fff;
+}
+
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-right-content .mtz-footer-content-item div a,
+.mtz-footer-wrapper .mtz-footer-content-wrapper .mtz-footer-center-content .mtz-footer-content-item div a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  opacity: .5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
 }
 /*# sourceMappingURL=styles.css.map */

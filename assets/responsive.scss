@@ -1,0 +1,214 @@
+
+
+    @media only screen and (min-device-width: 800px) and (max-device-width: 1280px) {
+
+    }
+
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+    }
+
+
+    @media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+
+    }
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    }
+
+    @media only screen and (max-device-width: 420px){
+        .mtz-nav-wrapper{
+            nav{
+                padding: 15px 0 15px;
+                .mtz-nav-links,
+                .mtz-get-a-quote{
+                    display: none;
+
+                    .mtz-nav-logo img{
+                        height: 70px;
+                    }
+                }
+                .mtz-smaller-screen-navigation{
+                    display: block;
+                }
+            }
+        }
+
+        .mtz-landing-wrapper{
+            background-image: url(./images/patternSmall.jpg);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
+        //About Section
+        .mtz-about-wrapper{
+            .mtz-about-body{
+                display: block;
+
+                .mtz-about-content,
+                .class{
+                    width: 100%;
+                }
+
+                .mtz-about-content{
+                    padding: 0;
+                }
+
+                .class {
+                    width: 100%;
+                    height: 400px;
+                    margin-top: 50px;
+                    background-image: url(./images/photo-of-people-holding-each-other-s-hands-3184423.jpg);
+                    background-size: cover;
+                    background-position: center;
+                }
+            }        
+        }
+
+        //WHAT WE DO SECTION
+        .mtz-services-wrapper{
+
+            .mtz-services-header{
+
+                .mtz-services-list{
+                    display: block;
+                    width: 80%;
+                    margin: 0 auto;
+                    justify-content: center;
+        
+                    a{
+                        text-decoration: none;
+                        width: 90%;
+                        display: block;
+                        background-color: #ffffff;
+                        margin-bottom: 20px;
+                        margin: 0 auto;
+                        height: 200px;
+                        text-align: center;
+                        transition: all .4s ease-in-out;
+                        padding: 40px;
+                        border-radius: 20px;
+                        color: #2e2e2e;
+                        font-size: 17px;
+                        line-height: 16px;
+                        margin-top: 20px;
+        
+                        div{
+        
+                            img{
+                                height: 60px;
+                                width: 60px;
+                                padding-bottom: 10px;
+                            }
+                        }
+                    }
+        
+                    a:hover{
+                        background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
+                        // background-image: linear-gradient(135deg, #59669e88 0%, #274997 100%);
+                        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
+                        transform: scale(1.01);
+                        border-radius: 25px;
+                        color: #fff;
+                        padding-top: 50px;  
+                    }
+                }
+            }
+        }
+
+        //GET A QUOTE SECTION
+        .mtz-get-quote-wrapper{
+
+            form{
+
+                div:first-child{
+                    padding-bottom: 0 !important;
+                }
+
+                input,textarea{
+                    margin-bottom: 20px;
+                    background-color: #d8d8d880;
+                    border: 1px solid #ddd;
+                    transition: all .3s ease-out;
+                }
+
+                input:focus,
+                textarea:focus{
+                    border: 1px solid #0256f1;
+                    color: #253d69;
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+                }
+
+                textarea{
+                    width: 100%;
+                    resize: none;
+                }
+            }
+
+        }
+
+        //FOOTER SECTION
+        .mtz-footer-wrapper{
+            background-color: #202020;
+            padding: 40px 0 10px;
+        
+            .mtz-footer-content-wrapper{
+                display: block;
+                
+                .mtz-footer-left-content,
+                .mtz-footer-center-content,
+                .mtz-footer-right-content{
+                    width: 100%;
+                }
+
+                .mtz-footer-center-content,
+                .mtz-footer-right-content{
+                    margin-top: 20px;
+                }
+        
+                .mtz-footer-left-content{
+                    color: #fff;
+                }
+        
+                .mtz-footer-right-content,
+                .mtz-footer-center-content{
+                    display: flex;
+                    // flex-direction: column;
+                    
+                    .mtz-footer-content-item{
+                        width: 50%;
+                        padding: 0 10px 0 0;
+        
+                        h5{
+                            font-size: 15px;
+                            color: #fff;
+                            opacity: .8;
+                        }
+        
+                        div a{
+                            display: block;
+                            text-decoration: none;
+                            color: #fff;
+                            opacity: .5;
+                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+                        }
+                    }
+                }
+            }
+
+            p{
+                color: #fff;
+                opacity: .8;    
+            }
+        }
+        
+        
+    }
+    
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width: 320px) {
+
+    }
+  

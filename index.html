@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./bootstrap-4.3.1-dist/js/bootstrap.js">
     <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/responsive.css">
 </head>
 <body>
     <div class="container-fluid px-0 mtz-nav-wrapper">
@@ -25,62 +26,40 @@
                 <span>
                     <a href="#" class="mtz-get-a-quote">Get a Quote</a>
                 </span>
+                <span class="mtz-smaller-screen-navigation">
+                    MENU
+                </span>
             </nav>
         </header>
     </div>
     
     <div class="container-fluid px-0 bg"> 
         <section class="mtz-landing-wrapper container">
-            <div class="d-flex">
-                <div>
-                    <div class="mtz-landing">
-                        <div class="mtz-landing-text">
-                            <span>Industry Standard</span> Business Advisory and Professional Service Company
-                        </div>
-                        <p>Proven methods to capture business priorities and goals as well as current pain points that 
-                            enables measurable business outcomes.
-                        </p>
-                        <div class="mtz-landing-cta-button">
-                            <a href="#">
-                                <div class="mtz-landing-more">
-                                    LEARN MORE
-                                </div>
-                            </a>
-                                <div class="mtz-landing-more-shadow">
-                                    LEARN MORE
-                                </div>
-                        </div>
-                    </div>
+            <div class="mtz-landing">
+                <div class="mtz-landing-text">
+                    <span>Industry Standard</span> Business Advisory and Professional Service Company
                 </div>
-                <div class="blank">
-                    <img src="./assets/images/Artboard.png" alt="">
-                    <!-- <div class="mtz-landing">
-                        <div class="mtz-landing-text">
-                            <span>Industry Standard</span> Business Advisory and Professional Service Company
+                <p>Proven methods to capture business priorities and goals as well as current pain points that 
+                    enables measurable business outcomes.
+                </p>
+                <div class="mtz-landing-cta-button">
+                    <a href="#">
+                        <div class="mtz-landing-more">
+                            LEARN MORE
                         </div>
-                        <p>Proven methods to capture business priorities and goals as well as current pain points that 
-                            enables measurable business outcomes.
-                        </p>
-                        <div class="mtz-landing-cta-button">
-                            <a href="#">
-                                <div class="mtz-landing-more">
-                                    LEARN MORE
-                                </div>
-                            </a>
-                                <div class="mtz-landing-more-shadow">
-                                    LEARN MORE
-                                </div>
+                    </a>
+                        <div class="mtz-landing-more-shadow">
+                            LEARN MORE
                         </div>
-                    </div> -->
                 </div>
-            </div>      
+            </div>
         </section>   
     </div> 
 
-    <section class="mtz-about-wrapper">
-        <div class="container pt-5 pb-5 px-4">
-            <div class="d-flex">
-                <div class="col-md-6">
+    <div class="container">
+        <section class="mtz-about-wrapper pt-5 pb-5">
+            <div class="mtz-about-body">
+                <div class="mtz-about-content">
                     <h2 class="pt-4">About <span>us</span></h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
@@ -90,84 +69,94 @@
                         explicabo.
                     </p>
                 </div>
-                <div class="col-md-6 class">
+                <div class="class">
                     
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <section class="mtz-services-wrapper pt-4">
         <div class="mtz-services-header container px-0 pt-5 pb-5">
             <h3 class="text-center mtz-services-phrase">What <span>We Do</span></h3>
             <p class="text-center">some text goes here</p>
-            <div class="row">
+            
                 <div class="mtz-services-list">
-                    <a href="#">
+                    <a href="">
                         <div>
-                            <img src="./assets/images/line-chart.png" class="icons" />
+                            <img src="./assets/images/risk-80.png" class="icons"/>
                         </div>
                         <span>Risk<br/>Management</span>                        
                     </a>
-                    <a href="#">
+                    <a href="">
                         <div>
-                            <img src="./assets/images/" />
+                            <img src="./assets/images/risk-80.png" />
                         </div>
                         <span>Management<br/>Consulting</span>
                     </a>
-                    <a href="#">
+                    <a href="">
                         <div>
-                            <img src="./assets/images/" />
+                            <img src="./assets/images/risk-80.png" />
                         </div>
                         <span>Performance<br/>Management</span>                        
                     </a>
                 </div>
                 <div class="mtz-services-list">
-                    <a href="#">
+                    <a href="">
                         <div>
-                            <img src="./assets/images/" />
+                            <img src="./assets/images/risk-80.png" />
                         </div>
                         <span>Strategy</span>
                     </a>
-                    <a href="#">
+                    <a href="">
                         <div>
-                            <img src="./assets/images/" />
+                            <img src="./assets/images/risk-80.png" />
                         </div>
                         <span>Technology</span>
                     </a>
-                    <a href="#">
+                    <a href="">
                         <div>
-                            <img src="./assets/images/" />
+                            <img src="./assets/images/risk-80.png" />
                         </div>
                         <span>Metro</span>
                     </a>
                 </div>
+
             </div>
-        </div>
     </section>
 
-    
-
-    <section class="mtz-services-wrapper pt-4">
-        <div class="mtz-services-header container px-0 pt-5 pb-5">
-            <h3 class="text-center">Our <span>Goal</span></h3>
-            <p class="text-center">some text goes here</p>
-            <div class="row">
-                    
+    <section class="mtz-our-goal-wrapper pt-4">
+        <div class="mtz-our-goal-header container-fluid px-0 pt-5 pb-5">
+            <div class="container">
+                <div class="mtz-our-goal">
+                    <div>
+                    </div>
+                    <div>
+                        <h3 class="">Our <span>Goal</span></h3>
+                        <p class="">some text goes here</p>            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis possimus sint blanditiis amet fugiat deleniti vero porro omnis, harum iure, quam, officia facere ipsa sapiente quasi quod in libero!Itaque aut cum fugiat delectus eum voluptates autem, adipisci nisi facere molestias facilis nostrum est dolore placeat aliquam, quae similique illo dolores eius eveniet in ipsum distinctio sed. Laudantium, voluptatum.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis possimus sint blanditiis amet fugiat deleniti vero porro omnis, harum iure, quam, officia facere ipsa sapiente quasi quod in libero!Itaque aut cum fugiat delectus eum voluptates autem, adipisci nisi facere molestias facilis nostrum est dolore placeat aliquam, quae similique illo dolores eius eveniet in ipsum distinctio sed. Laudantium, voluptatum.
+                            Itaque aut cum fugiat delectus eum voluptates autem, adipisci nisi facere molestias facilis nostrum est dolore placeat aliquam, quae similique illo dolores eius eveniet in ipsum distinctio sed. Laudantium, voluptatum.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container pt-5 pb-5">
         <div class="mtz-get-quote-wrapper">
-            <h3 class="text-center pb-4">Get a Quote</h3>
-            <form class="text-center">
-                <div class="pb-3">
+            <h3 class="text-center">Get a Quote</h3>
+            <form class="text-center mt-4">
+                <div>
                     <input placeholder="Name" type="" class="col-lg-3"/>
                     <input placeholder="Phone Number" type="" class="col-lg-3"/>
                 </div>
                 <div class="pb-3">
-                    <textarea placeholder="Message" class="col-6"></textarea>
+                    <textarea placeholder="Message" class=""></textarea>
                 </div>
                 <button type="submit" class="text-center">SUBMIT</button>
             </form>
@@ -176,14 +165,55 @@
 
     <footer>
         <div class="container-fluid px-0 mtz-footer-wrapper">
-            <div class="container pt-5 pb-5">
-                <div class="d-flex">
-                    <div class="col-md-6 col-xs-12">
-                        
+            <div class="container pt-4 pb-2">
+                <div class="mtz-footer-content-wrapper">
+                    <div class="mtz-footer-left-content">
+                        <h3>Heading</h3>
                     </div>
-                    <div class="col-md-6 col-xs-12">2</div>
+                    <div class="mtz-footer-center-content">
+                        <div class="mtz-footer-content-item">
+                            <h5>COMPANY</h5>
+                            <div>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                        <div class="mtz-footer-content-item">
+                            <h5>LINKS</h5>
+                            <div>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mtz-footer-right-content">
+                        <div class="mtz-footer-content-item">
+                            <h5>Heading</h5>
+                            <div>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                        <div class="mtz-footer-content-item">
+                            <h5>Follow us</h5>
+                            <div>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                                <a href="#">link</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorum obcaecati quaerat. Ab cupiditate perspiciatis veritatis? Asperiores, nobis ratione ipsa quas doloribus magnam dolore adipisci delectus mollitia et praesentium quis?
+                <p class="text-center pt-3 mtz-footer-content-copy">
+                    Copyright 2020
+                </p>
             </div>
         </div>
     </footer>

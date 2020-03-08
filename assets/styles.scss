@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    // font-family: Montserrat, sans-serif
 }
 
 .scrolled{
@@ -73,28 +72,33 @@ body{
             background: linear-gradient( to bottom right, rgb(196, 57, 22));
             box-shadow: none;
         }
+
+        .mtz-smaller-screen-navigation{
+            display: none;
+        }
     }
 }
-
-// .bg{
-//     background-image: url('./images/Artboard-h.png');
-//     background-size: cover;
-//     margin-top: -200px;
-// }
 
 //Landing page section
 .mtz-landing-wrapper{
     height: 700px;
     width: 100%;
-
-   
-
-    // background-posiiton: 
-
+    background-image: url("./images/Artboard.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+        
 
     .mtz-landing{   
         margin: 0 auto; 
         max-width: 1200px;
+
+        // img{
+        //     position: relative;
+        //     right: 0;
+        //     top: 0;
+        //     bottom: 0;
+        // }
 
         .mtz-landing-text{
             font-size: 40px;
@@ -148,15 +152,36 @@ body{
                 margin-left: 10px;
             }
         }
-
-        .blank img{
-            margin-top: -500px;
-            // background-image: url("./images/artboard.png");
-            // width: 500px;
-            // background-size: cover;
-            // width: 100%;
-        }
     }
+}
+
+//About Section
+.mtz-about-wrapper{
+    background: linear-gradient(to right, #0000004d, #000000e6, url(./images/bg-goal.jpg)); 
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+        .mtz-about-body{
+            display: flex;
+            // justify-content: 
+
+            .mtz-about-content,
+            .class{
+                width: 50%;
+            }
+
+            .mtz-about-content{
+                padding: 0 10px;
+            }
+
+            .class {
+                background-image: url(./images/photo-of-people-holding-each-other-s-hands-3184423.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    
 }
 
 //Services section
@@ -186,96 +211,105 @@ body{
             color: #555555;
         }
 
-        div{
-            .mtz-services-list{
-                display: flex;
-                width: 80%;
-                margin: 0 auto;
-                justify-content: center;
+        .mtz-services-list{
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
 
-                a{
-                    text-decoration: none;
-                    width: 250px;
-                    background-color: #fff;
-                    margin: 20px;
-                    height: 200px;
-                    text-align: center;
-                    transition: all .4s ease-in-out;
-                    padding: 40px;
-                    border-radius: 20px;
-                    color: #2e2e2e;
-                    font-size: 17px;
-                    line-height: 16px;
+            a{
+                text-decoration: none;
+                width: 250px;
+                background-color: #fff;
+                margin: 20px;
+                height: 200px;
+                text-align: center;
+                transition: all .4s ease-in-out;
+                padding: 40px;
+                border-radius: 20px;
+                color: #2e2e2e;
+                font-size: 17px;
+                line-height: 16px;
 
-                    div{
+                div{
+                    // display: inline-block;
 
-                        img{
-                            height: 60px;
-                            width: 60px;
-                            padding-bottom: 10px;
-                        }
+                    img{
+                        height: 60px;
+                        width: 60px;
+                        padding-bottom: 10px;
                     }
                 }
+            }
 
-                a:hover{
-                    background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
-                    // background-image: linear-gradient(135deg, #59669e88 0%, #274997 100%);
-                    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
-                    transform: scale(1.01);
-                    border-radius: 25px;
-                    color: #fff;
-                    padding-top: 50px;  
-                }
+            a:hover{
+                background-image: linear-gradient(135deg, #6A30D1 0%, #5C83E3 100%);
+                // background-image: linear-gradient(135deg, #59669e88 0%, #274997 100%);
+                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.2);
+                transform: scale(1.01);
+                border-radius: 25px;
+                color: #fff;
+                padding-top: 50px;  
             }
         }
     }
-
-    
 }
 
-//About Section
-.mtz-about-wrapper{
-    background: linear-gradient(to right, #0000004d, #000000e6, url(./images/bg-goal.jpg)); 
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    // height: 500px;
+//Our Goal Section
+.mtz-our-goal-wrapper{
+    background-color: #eaecee;
 
-    .class {
-        background-color: #000;
+    .mtz-our-goal-header{
+        background-color: rgb(66, 66, 114);
+
+        .mtz-our-goal{
+            display: flex;
+
+            div{
+                width: 50%;
+            }
+        }
     }
 }
 
 //Get a Quote Section
 
 .mtz-get-quote-wrapper{
-   
+
     form{
-        input{
-            padding: 10px;
-            // transition: ;
+
+        div:first-child{
+            padding-bottom: 10px;
         }
 
-        input:focus{
-            border: 1px solid #182e58;
+        input,textarea{
+            padding: 10px;
+            background-color: #d8d8d880;
+            border: 1px solid #ddd;
+            transition: all .3s ease-out;
         }
 
         textarea{
             resize: none;   
             height: 150px;
             padding: 10px;
-            transition: all .8s ease-out;
+            width: 50%;
+            transition: all .3s ease-out;
         }
 
+        input:focus,
         textarea:focus{
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8); 
+            border: 1px solid #0256f1;
+            color: #253d69;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
         }
 
         button{
             // height: 70px !important;
             background: linear-gradient( to bottom right, rgb(22, 34, 196), rgb(4, 11, 73));
-            padding: 12px 30px;
+            padding: 12px 50px;
             color: #fff;
+            border: 0;
             border-radius: 5px;
             text-decoration: none;     
             transition: all .4s ease-out; 
@@ -293,7 +327,46 @@ body{
 
 //Footer Section
 .mtz-footer-wrapper{
-    // height: 250px;
-    background-color: #000;
-    position: fixed;
-}
+    background-color: #202020;
+    padding: 40px 0 10px;
+
+    .mtz-footer-content-wrapper{
+        display: flex;
+        
+        .mtz-footer-left-content,
+        .mtz-footer-center-content,
+        .mtz-footer-right-content{
+            width: 33.3%;
+        }
+
+        .mtz-footer-left-content{
+            color: #fff;
+        }
+
+        .mtz-footer-right-content,
+        .mtz-footer-center-content{
+            display: flex;
+            flex-direction: row;
+            
+            .mtz-footer-content-item{
+                width: 50%;
+                padding: 0 10px 0;
+
+                h5{
+                    font-size: 15px;
+                    color: #fff;
+                    // opacity: .8;
+                }
+
+                div a{
+                    display: block;
+                    text-decoration: none;
+                    color: #fff;
+                    opacity: .5;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI','Open Sans', 'Helvetica Neue';
+                }
+            }
+            }
+        }
+
+    }
